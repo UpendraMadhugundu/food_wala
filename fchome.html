@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <title>fw home</title>
+    <style>
+      .navbar{
+          position: sticky;
+          top: 0px;
+        }
+        .logo{
+            width: 75px;
+            height: 75px;
+            box-shadow: 0px 7px 10px black;
+            margin-left: 10px;
+        }
+        #intro{
+          width: 100%;
+          height: 500px;
+          background-image: url(./backgrondimage.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 500px;
+        }
+
+        .hat{
+          width: 50px;
+          height: 50px;
+          color: red;
+          margin-top: 30px;
+          
+        }
+        .bannerText1{
+          color: blanchedalmond;
+          font-size: 60px;
+          margin-top: -18px;
+          margin-left: -00px;
+        }
+        .bannerText2{
+          color: blanchedalmond;
+          font-size: 40px;
+          margin-left: 0px;
+        }
+        .bannerText3{
+          color: blanchedalmond;
+          font-size: 25px;
+          margin-left: 0px;
+        }
+        .foody{
+          width: 180px;
+          height: 300px;
+          margin: 20px;
+          border-radius: 15px;
+        }
+        .foodyImage{
+          width: 100%;
+          height: 200px;
+          border-radius: 15px;
+        }
+        
+        .foodyText{
+          margin-left: 10px;
+        }
+        
+        .containerText{
+          margin-top: 20px;
+          margin-left: 40px;
+        }
+        .discount{
+          width: 100%;
+          height: 400px;
+          margin-top: 0px;
+          background-image: url(./discountimage.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% 400px;
+        }
+        .discountImage{
+          width: 100%;
+          height: 400px;
+        }
+        .btn{
+          width: 200px;
+          height: 40px;
+          font-size: 20px;
+          background-color: rgb(0, 0, 0);
+          color: white;
+          margin-top: 350px;
+        }
+        .contactShow{
+          width: 100%;
+          height: 400px;
+          margin-top:0px;
+          border: 2px solid black;
+          background-image: url(./contactUs.jpg);
+          background-repeat: no-repeat;
+          background-size:100% 400px;
+        }
+        .contactText{
+          width: 360px;
+          height: 100px;
+          color: white;
+          text-align: left;
+          font-size: 40px;
+          position: relative;
+          bottom: 350px;
+          left: 30px;
+        }
+        .followShow{
+          width: 100%;
+          height: 400px;
+          margin-top:20px;
+          background-image: url(./followusimage.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 300px;
+        }
+        .fa-brands{
+          font-size: 50px;
+          margin-top: 300px;
+          margin-left: 20px;
+        }
+        .fa-brands:hover{
+          font-size: 52px;
+        }
+        .aboutShow{
+          width: 100%;
+          height: 300px;
+          color: #ffff;
+          margin-top:20px;
+          text-align: center;
+          background-color: black;
+          background-repeat: no-repeat;
+          background-size: 100% 300px;
+        }
+        .aboutTextHead{
+          text-decoration: underline;
+          margin-top: 20px;
+        }
+        .aboutText{
+          position: relative;
+          top: 15px;
+        }
+        i{
+          color: black;
+        }
+        .modal-content{
+          height: 500px;
+          background-color: #ffff;
+        }
+        .textarea-control{
+          width: 100%;
+          height: 260px;
+        }
+        .btnProfile{
+          color: rgb(129, 126, 126);
+          background-color: rgb(251, 249, 249);
+          border: none;
+          margin-top: 7px;
+        }
+        .btnProfile:hover{
+          background-color: rgb(251, 249, 249);;
+          color: rgb(51, 51, 51);
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <h1>Food Wala</h1>
+
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="./logo.jpg" alt="">
+        </a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#homeSection"><h5>Home</h5><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile"><h5>Profile</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#yourChoise"><h5>Your Favourite</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#discount"><h5>Discounts & Offers</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><h5>Contact Us</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#follow"><h5>Follow Us</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><h5>About Us</h5></a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+
+      <div id="intro">
+        <div class="container">
+          <div class="row">
+            <div class="banner">
+              <img class="hat" src="./cookhat.png" alt="">
+                <h1 class="bannerText1">Enjoy your favourite</h1>
+                <h3 class="bannerText2">Taste your best one...!</h3>
+                <h5 class="bannerText3">Feel like a homely food.....!</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="yourChoise">
+        <div class="container">
+          <h2 class="containerText">Your favourite..?</h2>
+          <div class="row shadow">
+            <div class="">
+              <div class="foody shadow">
+                <img class="foodyImage" src="./eggfriedrice.jpg" alt="image not found">
+                <h4 class="foodyText">Egg Fried Rice</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./chickenfriedrice.png" alt="image not found">
+                <h4 class="foodyText">Chicken Fried Rice</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./eggnoodles.jpg" alt="image not found">
+                <h4 class="foodyText">Egg Noodles</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./chickennoodles.jpg" alt="image not found">
+                <h4 class="foodyText">Chicken Noodles</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./chickenbiryani.jpg" alt="image not found">
+                <h4 class="foodyText">Chicken Biryani</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./chikenmandibiryani.jpeg" alt="image not found">
+                <h4 class="foodyText">Chicken Mandi Biryani</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./idlevada.jpg" alt="image not found">
+                <h4 class="foodyText">Idle Vada</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./dosa.jpeg" alt="image not found">
+                <h4 class="foodyText">Dosa</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./fullmeals.jpg" alt="image not found">
+                <h4 class="foodyText">Mull Meals</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+            <div>
+              <div class="foody shadow">
+                <img class="foodyImage" src="./vegbiryani.jpg" alt="image not found">
+                <h4 class="foodyText">Veg Biryani</h4>
+                <a  class="foodyText"href="">view more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="discount">
+        <div class="container">
+          <div class="row">
+            <h2 class="containerText">Discounts & Offers</h2>
+            
+              <div class="discount text-center">
+              <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                  view discount
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Discounts & Offers</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img class="discountImage" src="./discountcoupons.jpg" alt="image not found">
+                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>                      
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <h2 class="containerText">Contact Us</h2>
+            <div class="contactShow text-center">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">click here</button>
+              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button> -->
+              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Send Message</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                      <div class="modal-body">
+                        <form action="contact">
+                          <label for="entering-email" class="col-form-label">Enter Email</label>
+                          <input type="email" class="form-control" id="entering-email" placeholder="Enter email" required>
+                          <label for="entering-message" class="col-form-label">message</label>
+                          <textarea class="textarea-control" id="entering-message" placeholder="text here..!"></textarea>
+                          <button type="button" class="btn-close btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="submit" class="btn-submit btn-primary">Send message</button>
+                        </form>
+                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                      </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="contactText">
+                <span>If you want to know more abous us, click on button to send message</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="follow">
+        <div class="container">
+          <div class="row">
+              <div class="followShow text-center">
+                <a href=""><i class="fa-brands fa-google"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="aboutShow">
+              <h1 class="aboutTextHead">About Us</h1>
+              <h5 class="aboutText">Company : Food Wala</h5>
+              <h5 class="aboutText">Email : foodwala00023@gmail.com</h5>
+              <h5 class="aboutText">Ph : 180-14754-764</h5>
+              <h5 class="aboutText">Address : Not placed yet</h5>
+              <h5 class="aboutText">Terms & conditions</h5>
+              <h5 class="aboutText">Private policy</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
