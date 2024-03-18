@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,6 +20,7 @@
         <div class="row center">
             <div class="info">
                 <h1>Welcome To Food Wala....!</h1>
+                <h3> Click to enter into main page</h3>
                 <a href="fchome.html"><button class="but shadow">Enter</button></a>
             </div>
         </div>
